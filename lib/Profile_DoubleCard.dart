@@ -32,18 +32,17 @@ class ProfileDoubleCard extends StatelessWidget {
     return Center(
       child: Container(
         height: 200,
-        width: MediaQuery.of(context).size.width * 0.9,
+
         child: Stack(
           children: [
             SizedBox(
               height: 25,
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 25.0, top: 20),
+              padding: const EdgeInsets.only(bottom: 25.0, top: 20, left: 50,right: 50),
               child: Center(
                 child: Container(
-                  width: MediaQuery.of(context).size.width * 0.7,
-                  decoration: BoxDecoration(
+                   decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
                           color: Color(0xb79c9c9c),
@@ -91,8 +90,7 @@ class ProfileDoubleCard extends StatelessWidget {
                 child: Center(
                   child: Container(
                     height: 120,
-                    width: MediaQuery.of(context).size.width * 0.85,
-                    decoration: BoxDecoration(
+                      decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
                             color: Color(0xa9656565),
@@ -108,6 +106,7 @@ class ProfileDoubleCard extends StatelessWidget {
                             : primaryCardColor,
                         borderRadius: BorderRadius.circular(5)),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Stack(
                           children: [
@@ -205,8 +204,8 @@ class ProfileDoubleCard extends StatelessWidget {
                                   ))
                             ],
                           ),
-                        )
-                      ],
+                        ),
+                         ],
                     ),
                   ),
                 ),
